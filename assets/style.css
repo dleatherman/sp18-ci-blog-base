@@ -9,6 +9,10 @@ a {
   color: #111;
 }
 
+.hidden {
+  display: none;
+}
+
 .nav--top {
   list-style-type: none;
   padding: 0;
