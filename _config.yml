@@ -1,7 +1,6 @@
 title: Core Interaction Sp18 Blog Base
 timezone: America/New_York
 theme:
-relative_permalinks: true
 plugins:
   - jekyll-time-to-read
 defaults:
