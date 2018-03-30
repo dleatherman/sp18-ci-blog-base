@@ -1,0 +1,10 @@
+title: Core Interaction Sp18 Blog Base
+timezone: America/New_York
+plugins:
+  - jekyll-time-to-read
+defaults:
+  -
+    scope:
+      type: "posts"
+    values:
+      layout: "post"
