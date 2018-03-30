@@ -20,7 +20,7 @@ layout: default
   {% if post.url != page.url %}
     {% if forloop.index < 6 or found %}
       <li>
-        {{ post.date | date: "%B %-d, %Y" }} | <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        {{ post.date | date: "%B %-d, %Y" }} | <a href="{{ post.url }}">{{ post.title }}</a>
       </li>
     {% endif %}
   {% else %}
