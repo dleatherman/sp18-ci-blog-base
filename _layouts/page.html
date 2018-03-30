@@ -9,9 +9,7 @@ layout: default
   <p class="post--date">
     {{ page.date | date: "%B %-d, %Y" }}
   </p>
-  <p class="post--reading-time hidden">
-    Reading time: {{ content }}
-  </p>
+  {%- include reading_time.html -%}
   {{ content }}
 </div>
 
