@@ -1,5 +1,6 @@
 title: Core Interaction Sp18 Blog Base
 timezone: America/New_York
+theme:
 plugins:
   - jekyll-time-to-read
 defaults:

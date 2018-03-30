@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<div class="post--wrapper">
+  <h2 class="post--title">
+    {{ page.title }}
+  </h2>
+  <p class="post--date">
+    {{ page.date | date: "%B %-d, %Y" }}
+  </p>
+  <p class="post--reading-time">
+    Reading time: {{ content | reading_time_as_i }}
+  </p>
+  {{ content }}
+</div>
+
+<ul class="nav--posts">
+{% for post in site.posts %}
+  {% if post.url != page.url %}
+    {% if forloop.index < 6 or found %}
+      <li>
+        {{ post.date | date: "%B %-d, %Y" }} | <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endif %}
+  {% else %}
+    {% assign found = true %}
+  {% endif %}
+{% endfor %}
+</ul>
